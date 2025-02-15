@@ -1,0 +1,211 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://images7.alphacoders.com/850/thumb-1920-850918.jpg');
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: purple;
+  color: white;
+}
+
+
+.tophead {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.topNav {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: rgba(22, 22, 22, 0.4);
+}
+
+.topNav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.topNav li {
+  font-size: 18px;
+}
+
+.topNav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.mainContainer {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+}
+
+/* Main Content Box */
+.contentBox {
+  width: 90%;
+  background-color: rgba(8, 8, 8, 0.99);
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+/* Left Section */
+.leftSection {
+  width: 70%; 
+  padding-left: 15px;
+}
+
+.greet {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+
+/* image box sheesh */
+
+.imageBox {
+  width: 100%;
+  background-color: rgba(8, 8, 8, 0.99);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.imageLinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 2fr));
+  gap: 10px;
+}
+
+.imageLinks a {
+  display: block;
+  border: 3px solid transparent;
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+.imageLinks img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; 
+}
+
+.imageLinks a:hover {
+  border-color: purple; 
+}
+
+.imageLinks span {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+
+/* Collapse stuff */
+
+.collapse-checkbox {
+  display: none;
+}
+
+.collapse-label {
+  cursor: pointer;
+  display: block;
+  background-color: rgba(34, 33, 33, 0.99);
+  padding: 10px;
+  font-size: 18px;
+  border-top: white 1px solid;
+  width: 850px;
+  overflow: hidden;
+}
+
+.col1Text {
+  display: none;
+  padding: 10px;
+  background-color: rgb(83, 82, 82);
+  border-top: 1px solid #ccc;
+}
+
+.collapse-checkbox:checked + .col1Text {
+  display: block;
+}
+
+
+/* Commentss */
+.comment {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Right Section */
+.rightSection {
+  width: 30%;
+  margin: 15px;
+  background-color: rgb(83, 82, 82);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 15px;
+}
+
+
+
+/* Footer lmao foot */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(22, 22, 22, 0.99);
+  padding: 5px;
+  color: rgb(128, 126, 126);
+}
+
+
+
+/* WEISS PAGE */
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.title ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+

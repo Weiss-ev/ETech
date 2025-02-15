@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weiss Useless Info's Wiki</title>
+</head>
+
+<body>
+
+    <!-- Header Section (Navigation Bar) -->
+    <header class="tophead">
+        <h2>Useless Info</h2>
+        <form class="search-form" action="#" method="#">
+            <input placeholder="Search ahh">
+            <button type="submit">🔎</button>
+        </form>
+    </header>
+
+    <nav class="topNav">
+        <ul class="nameasHome">
+            <li><a href="#about">About</a></li>
+            <li><a href="#comments">Comments</a></li>
+        </ul>
+    </nav>
+
+    <div class="mainContainer">
+        <!-- Main Content Box -->
+        <section class="contentBox">
+            <!-- Left Section (About and Select Information) -->
+            <div class="leftSectionWeiss">
+                <div class="title">
+                    <h1>Weiss Schnee</h1>
+
+                    <ul>
+                        <a href="index.html">Back to Home</a>
+                    </ul>
+
+                </div>
+
+                <div id="aboutWeiss">
+                    <h2>About</h2>
+                    <p>Weiss Schnee is a titular protagonist of RWBY. She is a Huntress, a former student of the now-defunct Beacon Academy, and former heiress of the Schnee Dust Company. Her weapon of choice is a Multi-Action Dust Rapier (MADR) named Myrtenaster.</p>
+                    <p>As the former heiress of the vastly influential Schnee Dust Company, Weiss made her first appearance in the "White" Trailer. After enrolling in Beacon against the wishes of her father, Jacques Schnee, she becomes a member of Team RWBY alongside Ruby Rose, Blake Belladonna and Yang Xiao Long. Being the middle of the three Schnee siblings, Weiss is the younger sister of Winter Schnee and the older sister of Whitley Schnee.</p>
+                </div>
+
+                <div class="mainInfoWeiss">
+                    <h3>Weiss Schnee</h3>
+                    <img src="https://media.tenor.com/ebo6F0qpq4kAAAAe/rwby-weiss-schnee-rwby.png" alt="weiss">
+                </div>
+
+                <div class="weissWep">
+                    <h3>Myrtenaster</h3>
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/001/894/841/large/giovanni-mota-myrtenaster-2.jpg?1454370184" alt="Myrtenaster">
+                    <h5>Myrtenaster is Weiss Schnee's signature weapon. It is a Multi Action Dust Rapier (MADR), which Weiss is first seen wielding in the "White" Trailer.</h5>
+                    <p>Myrtenaster is standard-sized for a rapier and primarily silver-gray in color. The hilt possesses four prongs that encase the revolver-like chamber around the ricasso instead of a bow type hand-guard that is common among most rapiers, in a manner somewhat alike to a swept hilt. This mechanism can be controlled by the sword-hand, enabling her to seamlessly cycle the chamber in combat. When Weiss carries the weapon on her hip it is sometimes seen with only two prongs as the other two fold away for easier storage.</p>
+                </div>
+
+                <div id="comments">
+                    <h2>Comments</h2>
+                    <textarea id="commentBox" rows="4" placeholder="Add your comment here..."></textarea>
+                    <button onclick="addComment()">Add Comment</button>
+
+                    <div id="commentSection"></div>
+                </div>
+
+                
+            </div>
+
+            <!-- Right Section (News) -->
+            <div class="rightSection">
+                <div class="news1">
+                    <h1>News / Stuff</h1>
+                    <h4>Shocking News</h4>
+                    <img src="https://i.imgflip.com/4/6woq7y.jpg" alt="a">
+                    <p>Some news here</p>
+                </div>
+
+                
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Weiss Useless Info's Wiki. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addComment() {
+            const commentBox = document.getElementById('commentBox');
+            const commentText = commentBox.value.trim();
+            const commentSection = document.getElementById('commentSection');
+
+            if (commentText) {
+                const commentDiv = document.createElement('div');
+                commentDiv.classList.add('comment');
+                commentDiv.innerHTML = `<p>${commentText}</p>`;
+                commentSection.appendChild(commentDiv);
+                commentBox.value = '';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

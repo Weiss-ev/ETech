@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weiss Useless Info's Wiki</title>
+</head>
+
+<body>
+
+    <!-- Header Section (Navigation Bar) -->
+    <header class="tophead">
+        <h2>Useless Info</h2>
+        <form class="search-form" action="#" method="#">
+            <input placeholder="Search ahh">
+            <button type="submit">🔎</button>
+        </form>
+    </header>
+
+    <nav class="topNav">
+        <ul class="nameasHome">
+            <li><a href="#about">About</a></li>
+            <li><a href="#comments">Comments</a></li>
+        </ul>
+    </nav>
+
+    <div class="mainContainer">
+        <!-- Main Content Box -->
+        <section class="contentBox">
+            <!-- Left Section (About and Select Information) -->
+            <div class="leftSection">
+                <div>
+                    <h1>HOME</h1>
+                </div>
+
+                <div class="greet">
+                    <h4>WELCOME TO</h4>
+                    <h2>Weiss Useless Info's Wiki</h2>
+                </div>
+
+                <div id="about">
+                    <h2>About</h2>
+                    <p>This wiki is dedicated to sharing useless information about various topics.</p>
+                </div>
+
+                <div class="imageBox">
+                    <h2>Links</h2>
+                    <div class="imageLinks">
+                        <a href="weisspage.html">
+                            <img src="https://media.tenor.com/ebo6F0qpq4kAAAAe/rwby-weiss-schnee-rwby.png" alt="Weiss">
+                            <span>Weiss Schnee</span>
+                        </a>
+
+
+                    </div>
+                </div>
+
+
+                <div id="comments">
+                    <h2>Comments</h2>
+                    <textarea id="commentBox" rows="4" placeholder="Add your comment here..."></textarea>
+                    <button onclick="addComment()">Add Comment</button>
+
+                    <div id="commentSection"></div>
+                </div>
+
+                
+            </div>
+
+            <!-- Right Section (News) -->
+            <div class="rightSection">
+                <div class="news1">
+                    <h1>News / Stuff</h1>
+                    <h4>Shocking News</h4>
+                    <img src="https://i.imgflip.com/4/6woq7y.jpg" alt="a">
+                    <p>Some news here</p>
+                </div>
+
+                
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>project for school, no other purpose is intended</p>
+        <p>Paul Angelo Pangda - 12.St-Anthony</p>
+    </footer>
+
+    <script>
+        function addComment() {
+            const commentBox = document.getElementById('commentBox');
+            const commentText = commentBox.value.trim();
+            const commentSection = document.getElementById('commentSection');
+
+            if (commentText) {
+                const commentDiv = document.createElement('div');
+                commentDiv.classList.add('comment');
+                commentDiv.innerHTML = `<p>${commentText}</p>`;
+                commentSection.appendChild(commentDiv);
+                commentBox.value = '';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
